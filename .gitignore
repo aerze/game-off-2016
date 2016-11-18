@@ -1,2 +1,8 @@
+# npm modules
 node_modules
+
+# firebase creds
 firebase_credentials.json
+
+# build files
+public/dist
