@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "less": "lessc src/less/main.less public/css/bundle.css",
+    "watch:less": "watch 'npm run less' src/less/"
   },
   "repository": {
     "type": "git",
@@ -32,6 +34,8 @@
     "eslint-config-airbnb": "^13.0.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^3.0.1",
-    "eslint-plugin-react": "^6.7.1"
+    "eslint-plugin-react": "^6.7.1",
+    "less": "^2.7.1",
+    "watch": "^1.0.1"
   }
 }
