@@ -23,6 +23,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // parse application/json
 app.use(bodyParser.json());
 
+// apply router to use /api as a base
 app.use('/api', apiRouter);
 
 // enable static server
