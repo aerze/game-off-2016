@@ -1,0 +1,49 @@
+@import './colors';
+
+
+.Terminal {
+  ::selection {
+    color: @black;
+    background: @green;
+  }
+
+  height: 100vh;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background: @black;
+  color: @green;
+
+  .consoleOutput,
+  .input {
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+
+  .consoleBox {
+    height: 200px;
+    padding: 4px 7px;
+    overflow: hidden;
+    border: 1px solid @green;
+  }
+
+  .input {
+    padding: 0;
+    font-family: monospace;
+    color: @green;
+    border: none;
+    background: @black;
+    &:focus {
+      outline: none;
+    }
+  }
+
+
+  .consoleOutput {
+    background: blue;
+  }
+
+  .input {
+    background: purple;
+  }
+}

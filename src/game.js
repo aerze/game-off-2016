@@ -1,14 +1,34 @@
 
+import firebaseCtrl from './firebase';
+import terminal from './terminal';
+
 import './less/game.less';
 
-function Game(point) {
-  this.x = point.x;
-  this.y = point.y;
-}
+const game = {
+  state: {
+    terminal: {
+      input: ''
+    },
+  },
 
-Game.prototype.init = function init() {
-  console.info('GAME::init()');
+  init() {
+    firebaseCtrl.init();
+    terminal.init();
+  },
+
+  update() {
+    // firebaseCtrl.update();
+    // terminal.update();
+    // screen.update();
+  },
+
+  // 60 fps
+  // optimize render methods
+  render() {
+    // terminal.render(this.state);
+    // screen.render(this.state.screen);
+  }
 };
 
 
-export default Game;
+export default game;
